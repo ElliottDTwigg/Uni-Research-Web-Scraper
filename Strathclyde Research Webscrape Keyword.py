@@ -66,6 +66,10 @@ for url in urls:
         researchAbstract = researchAbstract.replace('<br/>', ' ')
         researchAbstract = researchAbstract.replace('</p>', '')
         researchAbstract = researchAbstract.replace('<p>', '')
+        researchAbstract = researchAbstract.replace('<sub>', '')
+        researchAbstract = researchAbstract.replace('</sub>', '')
+        researchAbstract = researchAbstract.replace('<i>', '')
+        researchAbstract = researchAbstract.replace('</i>', '')
         researchAbstract = str(researchAbstract.strip())
         researchAbstract = researchAbstract.encode('utf-8')
         researchAbstract = repr(researchAbstract)[2:-1]
@@ -126,6 +130,10 @@ for url in urls:
                 researchAbstract = researchAbstract.replace('<br/>', ' ')
                 researchAbstract = researchAbstract.replace('</p>', '')
                 researchAbstract = researchAbstract.replace('<p>', '')
+                researchAbstract = researchAbstract.replace('<sub>', '')
+                researchAbstract = researchAbstract.replace('</sub>', '')
+                researchAbstract = researchAbstract.replace('<i>', '')
+                researchAbstract = researchAbstract.replace('</i>', '')
                 researchAbstract = str(researchAbstract.strip())
                 researchAbstract = researchAbstract.encode('utf-8')
                 researchAbstract = repr(researchAbstract)[2:-1]
